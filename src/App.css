@@ -20,3 +20,80 @@
 .App-link {
   color: #09d3ac;
 }
+
+/* Machine div */
+#quote-machine{
+  width: 100%;
+  position: fixed;
+  background-color: aquamarine;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+#quote-box {
+  margin: auto;
+}
+
+/* Quote itself */
+#text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: coral;
+  text-align: center;
+  padding: 10px;
+  margin:auto;
+  background-color: ivory;
+  font-family: monospace;
+  font-size: 40px;
+  border-radius: 10px 10px 0 0;
+
+}
+
+/* Author */
+#author{
+  /* background-color: dodgerblue; */
+  background-color: ivory;
+  text-align: right;
+  margin: 0 auto 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  #text {
+    margin-left: 20px;
+    margin-right:20px; 
+    font-size: 30px;
+  }
+
+  #author{
+    margin-left: 20px;
+    margin-right:20px; 
+    font-size: 20px;
+  }
+  
+}
+
+/* Buttom styling */
+#new-quote {
+  background-color: ivory; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  border-radius: 0 0 10px 10px;
+  
+}
+
+#new-quote:hover {
+   opacity: .5;
+}
+
