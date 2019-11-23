@@ -57,8 +57,11 @@ class App extends React.Component {
     console.log(this.state.selectedQuoteIndex + "looks like it worked?");
     return (
       <div className="App" id="quote-box">
-        <QuoteMachine finalQuote={this.finalQuote} assignNewQuoteIndex={this.assignNewQuoteIndex}/>
-        </div>
+        {
+          this.finalQuote ? 
+          <QuoteMachine finalQuote={this.finalQuote} assignNewQuoteIndex={this.assignNewQuoteIndex}/>
+        : null}
+  </div>
     );
   }
 

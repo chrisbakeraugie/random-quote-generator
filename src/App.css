@@ -61,6 +61,7 @@
   margin: 0 auto 0 auto;
   font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
+  border-radius: 0 0 10px 10px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -89,11 +90,36 @@
   display: inline-block;
   font-size: 20px;
   color: black;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0 10px;
   
 }
 
 #new-quote:hover {
-   opacity: .5;
+   opacity: .8;
+
+}
+
+#new-quote:focus{
+  outline: none;
+  
+}
+
+#tweet-quote{
+  text-decoration: none;
+  background-color: ivory; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  border-radius: 0 0 10px 0;
+}
+
+#tweet-quote:hover {
+  opacity: .8;
+
 }
 
