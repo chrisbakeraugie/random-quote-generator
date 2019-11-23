@@ -19,7 +19,7 @@ props.finalQuote.quote
             <Quote finalQuote={props.finalQuote}></Quote>
             <Author finalQuote={props.finalQuote}></Author>
             <Button buttonDisplayName="Next Quote" clickHandler={props.assignNewQuoteIndex} />
-            <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${props.finalQuote.quote + " -" + props.finalQuote.author}`}>Tweet</a>
+            <a id="tweet-quote" href={encodeURI(`https://twitter.com/intent/tweet?text=${props.finalQuote.quote + " -" + props.finalQuote.author}`)}>Tweet</a>
         </div>
 
     </div>);
